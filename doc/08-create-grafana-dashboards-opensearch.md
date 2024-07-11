@@ -81,9 +81,9 @@ Adding thresholds will change the Y-axis range, so you will not see as much deta
 ## Change axis for second metric/thresholds (pl)
 
 As ping4 has `rta` and `pl` metrics and they have different units, we can use both Y axis.
-Change the `pl`, `pl.warn`and `pl.crit` axis by clicking on the small colored line and choose `Right` as `Y Axis`.
+Change the `pl value`, `pl warn`and `pl crit` axis by clicking ading a match by regex override and set the axis placement to right.
 
-![Set Y axis](images/06-dashboard-panel-yaxis.png)
+![Set Y axis](images/08-dashboard-panel-yaxis.png)
 ^^^^
 ## Change colors for values/tresholds
 
@@ -122,7 +122,7 @@ If you want to hide metrics with only **0** in the choosen time range, activate 
 
 For thresholds we remove the the line filling, so they will only be a thin line.
 To add a new override click first on `Series overrides` and then on the `+ Add overrides`
-Insert `/critical|warning/`(the alias we used in the query) into `alias or regex`, add `Line fill:0` and `Legend: false` to it.
+Insert `/crit|warn/`(the alias we used in the query) into `alias or regex`, add `Line fill:0` and `Legend: false` to it.
 
 ![Overrides](images/07-dashboard-panel-display-overrides-graphite.png)
 
@@ -131,8 +131,8 @@ Insert `/critical|warning/`(the alias we used in the query) into `alias or regex
 
 ### With thresholds
 
-![With thresholds](images/07-final-dashboard-threshold-graphite.png)
+![With thresholds](images/08-final-dashboard-threshold-opensearch.png)
 
 ### Without thresholds
 
-![Without thresholds](images/07-final-dashboard-without-threshold-graphite.png)
+![Without thresholds](images/08-final-dashboard-without-threshold-opensearch.png)
