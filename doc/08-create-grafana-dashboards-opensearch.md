@@ -18,7 +18,7 @@ To save your changes, just hit the `Save` Button.
 
 We use templateing to get a map from var-[hostname|servicename|command] to a Grafana variable.
 We will set this as a query to OpenSearch and later if you want we change it to an constant.
-Open the `dashboard settings` settings by clicking on the gear-icon.
+Open the `dashboard settings` settings by clicking on the :gear:-icon.
 Form there select the `Variables` Reader.
 You can add new Variables by clicking on the `Add variable` Button.
 The variable name has to be `hostname`, `service` or `command` for the use with the grafana module.
